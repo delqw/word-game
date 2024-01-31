@@ -2,7 +2,7 @@ function generate() {
     const topic = document.getElementById('topic')
     const wordList = document.getElementById('wordList')
     const letterColor = document.getElementById('letterColor')
-    const wordBackgroundColor = document.getElementById('wordBackgroundColor')
+    // const wordBackgroundColor = document.getElementById('wordBackgroundColor')
     const sheetBackgroundColor = document.getElementById('sheetBackgroundColor')
     const gridSize = document.getElementById('gridSize')
     const language = document.getElementById('language')
