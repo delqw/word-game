@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחולל תשבץ מילים</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="head">
+        <h1>מחולל תשבץ מילים</h1>
+        <div id="wordListContainer">
+            <div>
+                <label for="topic">נושא: </label>
+                <input type="text" id="topic" placeholder="לדוג, פרחים">
+            </div>
+            <div>
+                <label for="wordList">הזינו מילים (מופרדות בפסיקים): </label>
+                <input type="text" id="wordList" placeholder="לדוג, תפוח, בננה, תפוז" value="לדוג, תפוח, בננה, תפוז">
+            </div>
+            <div>
+                <label for="letterColor">בחרו צבע לאותיות: </label>
+                <input type="color" id="letterColor" value="#000000">
+            </div>
+            <div>
+                <label for="wordBackgroundColor">בחרו צבע רקע למילים: </label>
+                <input type="color" id="wordBackgroundColor" value="#ffffff">
+            </div>
+            <div>
+                <label for="sheetBackgroundColor">בחרו צבע רקע לדף: </label>
+                <input type="color" id="sheetBackgroundColor" value="#ffffff">
+            </div>
+            <div>
+                <label for="gridSize">בחרו גודל לוח: </label>
+                <select id="gridSize">
+                    <option value="12">12x12</option>
+                    <option value="14">14x14</option>
+                    <option value="16">16x16</option>
+                    <option value="32">32x32</option>
+                </select>
+            </div>
+            <div>
+                <label for="language">בחרו שפה: </label>
+                <select id="language">
+                    <option value="english">אנגלית</option>
+                    <option value="hebrew">עברית</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button id="generateButton" onclick="generate()">צור תשבץ מילים</button>
+        </div>
+    </div>
+    
+    <div id="print-area">
+      <h1 id="topic-print" class="hide"></h1>
+      <div id="wordSearchContainer" class="hide"></div>
+    
+      <div id="wordListBox" class="hide"></div>
+    </div>
+    
+    <a id="downloadLink" class="hide" onclick="printWindow()">הורד תשבץ מילים</a>
+</body>
+</html>

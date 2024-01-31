@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #wordSearchContainer {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: -1px 0 0 -1px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  
+  #wordListContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #wordListBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #000;
+    padding: 10px;
+    max-width: 400px;
+    margin: 20px auto; /* Adjusted margin to lower the box away from the grid */
+  }
+  
+  .wordItem {
+    width: 45%;
+    margin-bottom: 5px;
+  }
+  
+  #downloadLink {
+    display: inline-block;
+    margin-top: 20px; /* Adjusted margin to lower the button away from the box */
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #generateButton {
+    margin-top: 20px; /* Added margin to lower the button down */
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border: solid 1px #000;
+  }
